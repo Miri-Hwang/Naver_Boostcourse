@@ -15,7 +15,7 @@ int main(int arge, char *argv[])
     // TODO: n과 partArr를 이용하여, K를 구하라
 
     // 1부터 N까지의 합
-    int sum_including_K = n * (n + 1) * 0.5;
+    long long sum_including_K = (long long)n * (n + 1) * 0.5;
 
     // 배열의 합
     for (int i = 0; i < lengthOfPartArr; i++)
@@ -24,7 +24,7 @@ int main(int arge, char *argv[])
     }
 
     // K = 1부터 N까지의 합 - 파일 내 숫자의 합
-    int K = sum_including_K - sum_without_K;
-    printf("K = %i", K);
+    long long K = sum_including_K - sum_without_K;
+    printf("K = %lld", K);
     return 0;
 }
